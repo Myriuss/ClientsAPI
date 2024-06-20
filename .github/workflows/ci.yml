@@ -43,7 +43,7 @@ jobs:
 
       - name: Run tests
         env:
-          DATABASE_URL: sqlite:///./test.db  # URL de la base de données SQLite
+          DATABASE_URL: sqlite:///./client.db  # URL de la base de données SQLite
         run: |
           pytest --maxfail=1 --disable-warnings -q
 
